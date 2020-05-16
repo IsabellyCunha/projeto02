@@ -11,10 +11,11 @@
 
     <body>
         <%@include file="../WEB-INF/jsfp/header.jspf" %>
-        <h1>Fornecedores:</h1>
+        <h1>Fornecedores</h1>
+        <h3><a href="add.jsp">Cadastrar</a></h3>
         <br>
 
-        <table>
+        <table border="1">
             <tr>
                 <th>Nome</th>
                 <th>Razão social</th>
@@ -22,6 +23,7 @@
                 <th>Endereço</th>
                 <th>CNPJ</th>
                 <th>Telefone</th>
+                <th>Comandos</th>
             </tr>
 
             <%for (Provider provider : Db.getProviders()) {%>

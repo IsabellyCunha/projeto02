@@ -5,15 +5,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Clientes - WebApp</title>
     </head>
     <body>
     <body>
         <%@include file="../WEB-INF/jsfp/header.jspf" %>
         <h1>Clientes</h1>
+        <h3><a href="add.jsp">Cadastrar</a></h3>
         <br>
 
-        <table>
+        <table border="1">
             <tr>
                 <th>Nome</th>
                 <th>E-Mail</th>
@@ -21,6 +22,7 @@
                 <th>CPF</th>
                 <th>RG</th>
                 <th>Telefone</th>
+                <th>Comandos</th>
             </tr>
 
             <%for (Customer customer : Db.getCustomers()) {%>
