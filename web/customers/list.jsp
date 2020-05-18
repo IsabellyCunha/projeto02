@@ -36,7 +36,7 @@
                 <td><%= customer.getTelefone()%></td>
 
                 <td>
-                    <%int index = Db.getProviders().indexOf(customer);%>
+                    <%int index = Db.getCustomers().indexOf(customer);%>
                     <a href="set.jsp?index=<%=index%>">Alterar</a>
                     <a href="remove.jsp?index=<%=index%>">Excluir</a>
                 </td>
